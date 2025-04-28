@@ -2,7 +2,13 @@
 
 ### 1. CM7 (Master çekirdek) → her 10 saniyede bir sırasıyla 0'dan 20'ye kadar sayı gönderiyor ve "X PING" mesajı terminale yazıyor.
 
-### 2. CM4 (Remote çekirdek) → gelen sayıya karşılık sayının ismini (örneğin "two") ve sonuna "PONG" ekleyerek cevap veriyor ve kendi terminaline yazıyor.: 🔥
+### 2. CM4 (Remote çekirdek) → gelen sayıya karşılık sayının ismini (örneğin "two") ve sonuna "PONG" ekleyerek cevap veriyor ve kendi terminaline yazıyor. 
+
+CM7 veri gönderiyor → CM4 alıyor ve cevaplıyor.
+
+CM7 cevabı bekliyor → cevabı alınca bir sonrakine geçiyor.
+
+İkisi birbiriyle senkronize çalışıyor (sırayla gidiyor, üst üste binmiyor).
 
 ---
 
